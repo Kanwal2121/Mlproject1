@@ -1,0 +1,28 @@
+[project]
+name = "MachineLearningProject"
+version = "0.0.1"
+description = "A machine learning project."
+authors = [
+    { name = "Kanwalalpreet Singh", email = "singhkanwal1212@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.7"
+
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn"
+    
+]
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "."}  # If your code is in the root; if in /src, change to "src"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
