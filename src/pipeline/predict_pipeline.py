@@ -41,7 +41,7 @@ class CustomData:
             self.test_preparation_course=test_preparation_course
             self.reading_score=reading_score
             self.writing_score=writing_score
-        def get_data_as_dataframe(self):
+        def get_data_as_data_frame(self):
             custom_data_input_dict={
                 'gender':[self.gender],
                 'race_ethnicity':[self.race_ethnicity],
@@ -66,9 +66,3 @@ class CustomData:
         raise CustomException(e,sys)
 
         
-
-
-
-
-
-
